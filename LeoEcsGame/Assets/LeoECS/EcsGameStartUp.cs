@@ -38,7 +38,8 @@ namespace LeoECS
             _systems.Add(new InputSystem()).
                 Add(new MovementSystem()).
                 Add(new MouseInputSystem()).
-                Add(new PlayerMouseLookSystem());
+                Add(new PlayerMouseLookSystem()).
+                Add(new CursorLockInit());
         }
 
         private void AddOneFrames()
