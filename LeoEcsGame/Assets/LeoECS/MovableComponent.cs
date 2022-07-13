@@ -9,6 +9,8 @@ namespace LeoECS
     {
         public CharacterController characterController;
         public float speed;
+        public float gravityScale;
+        public Vector3 velocity;
     }
     
 }

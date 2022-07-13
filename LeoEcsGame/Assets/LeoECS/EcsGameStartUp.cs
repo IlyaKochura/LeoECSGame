@@ -39,12 +39,13 @@ namespace LeoECS
                 Add(new MovementSystem()).
                 Add(new MouseInputSystem()).
                 Add(new PlayerMouseLookSystem()).
-                Add(new CursorLockInit());
+                Add(new CursorLockInit()).
+                Add(new GravitySystem());
         }
 
         private void AddOneFrames()
         {
-            
+            _systems.OneFrame<JumpEvent>();
         }
 
         private void OnDestroy()
