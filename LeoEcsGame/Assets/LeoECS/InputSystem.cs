@@ -17,7 +17,7 @@ namespace LeoECS
             foreach (var i in directionFilter)
             {
                 ref var directionComponent = ref directionFilter.Get2(i);
-                ref var direction = ref directionComponent.Direction;
+                ref var direction = ref directionComponent.direction;
 
                 direction.x = _moveX;
                 direction.z = _moveZ;

@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace LeoECS
 {
-    internal struct DirectionComponent
+    [Serializable]
+    public struct DirectionComponent
     {
-        public Vector3 Direction;
+        public Vector3 direction;
     }
 }

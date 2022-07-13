@@ -17,7 +17,7 @@ namespace LeoECS
                 ref var movableComponent = ref movableFilter.Get2(i);
                 ref var directionComponent = ref movableFilter.Get3(i);
 
-                ref var direction = ref directionComponent.Direction;
+                ref var direction = ref directionComponent.direction;
                 ref var transform = ref modelComponent.ModelTransform;
 
                 ref var characterController = ref movableComponent.characterController;
