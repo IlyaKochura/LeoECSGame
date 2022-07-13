@@ -36,7 +36,9 @@ namespace LeoECS
         private void AddSystems()
         {
             _systems.Add(new InputSystem()).
-                Add(new MovementSystem());
+                Add(new MovementSystem()).
+                Add(new MouseInputSystem()).
+                Add(new PlayerMouseLookSystem());
         }
 
         private void AddOneFrames()
