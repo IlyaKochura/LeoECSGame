@@ -22,12 +22,10 @@ namespace LeoECS
 
                 ref var characterController = ref movableComponent.characterController;
                 ref var speed = ref movableComponent.speed;
-
-                ref var velocity = ref movableComponent.velocity;
-                velocity.y += movableComponent.gravityScale * Time.deltaTime;
-
+                
                 var rawDirection = (transform.right * direction.x) + (transform.forward * direction.z);
-                characterController.Move(rawDirection * speed * Time.deltaTime);
+                characterController.MovePosition(transform.position + rawDirection * speed * Time.deltaTime);
+                // transform.position += rawDirection * speed * Time.deltaTime;
             }
         }
     }

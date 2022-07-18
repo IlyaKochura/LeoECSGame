@@ -40,7 +40,9 @@ namespace LeoECS
                 Add(new MouseInputSystem()).
                 Add(new PlayerMouseLookSystem()).
                 Add(new CursorLockInit()).
-                Add(new GravitySystem());
+                Add(new PlayerGroundCheckSystem()).
+                Add(new PlayerJumpSendEventSystem()).
+                Add(new PlayerJumpSystem());
         }
 
         private void AddOneFrames()

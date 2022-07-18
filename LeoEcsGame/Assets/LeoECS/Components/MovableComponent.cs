@@ -7,7 +7,7 @@ namespace LeoECS
     [Serializable]
     public struct MovableComponent
     {
-        public CharacterController characterController;
+        public Rigidbody characterController;
         public float speed;
         public float gravityScale;
         public Vector3 velocity;

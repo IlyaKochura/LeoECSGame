@@ -19,7 +19,8 @@ namespace LeoECS
                 
                 if (!groundCheck.isGrounded) continue;
 
-                velocity.y = Mathf.Sqrt(jumpComponent.jumpScale * -2f * movable.gravityScale);
+                velocity.y = Mathf.Sqrt(jumpComponent.jumpScale* -2f * movable.gravityScale);
+               
             }
         }
     }
